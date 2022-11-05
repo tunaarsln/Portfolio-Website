@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kişisel Portfolyo Sitem</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2a22e168d6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-------------Header------------->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımda</a></li>
+                        <li><a href="#portfolio">Çalışmalarım</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Geliştirme</p>
+                    <h1><span>Merhaba</span><br>Ben Tunahan</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-------------About------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Hakkımda</h1>
+
+                        <p>Merhaba ben Tunahan Arslan. Bir süredir iyi bir Web Geliştiricisi olma
+                             yolunda emin adımlar atıyor ve bu yolda her gün kendimi biraz daha
+                             geliştiriyorum. Farklı şeyler öğrenmeye, yeniliklere, araştırmaya
+                             meraklı biri olarak güzel bir ekibin parçası olmak, kendimi bu alanda
+                             daha yetkin biri olarak görmek istiyorum.
+                            
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Yeteneklerim</p>
+                            <p class="tab-links" onclick="opentab('experience')">Sertifikalarım</p>
+                            <p class="tab-links" onclick="opentab('education')">Eğitimim</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Geliştirme</span><br>HTML / CSS / JavaScript</li>
+                                <li><span>Kütüphane / Framework</span><br>Bootstrap</li>                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>freeCodeCamp</span><br>Responsive Web Design</li>
+                                <li><span>BTK Akademi</span><br>HTML5 ile Web Geliştirme</li>
+                                <li><span>BTK Akademi</span><br>Bilgi Teknolojilerine Giriş</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2024</span><br>Anadolu Üniversitesi / Bilgisayar Programcılığı</li>
+                                <li><span>2021-2025</span><br>Sakarya Üniversitesi / Sosyoloji</li>
+                                <li><span></span><br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------Portfolio------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Çalışmalarım</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Sosyal Medya Uygulaması</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nihil saepe alias nisi culpa impedit ab.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Müzik Uygulaması</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nihil saepe alias nisi culpa impedit ab.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Onine Alışveriş Uygulaması</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nihil saepe alias nisi culpa impedit ab.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Daha Fazla...</a>
+            </div>
+        </div>
+
+        <!-------------Contact------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <div class="contact-l1">
+                            <h1 class="sub-title" id="contactme">Bana Ulaşın</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> tunaarslnn@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 05380494578</p>
+                        </div>
+                        <div class="contact-l2">
+                            <div class="social-icons">
+                                <a target="_blank" href="https://www.linkedin.com/in/tunaarsln/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/tunaarsln/"><i class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://github.com/tunaarsln"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
